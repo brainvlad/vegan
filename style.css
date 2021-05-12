@@ -15,6 +15,7 @@
 
 body{
     /*width: 100%;*/
+    position: relative;
     background-color: #ffffff;
     font-family: "Bahnschrift", sans-serif;
     color: #566730;
