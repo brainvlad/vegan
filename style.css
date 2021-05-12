@@ -5,6 +5,7 @@
     font-weight: normal;
 }
 
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +15,6 @@
 
 body{
     /*width: 100%;*/
-    position: relative;
     background-color: #ffffff;
     font-family: "Bahnschrift", sans-serif;
     color: #566730;
@@ -1202,6 +1202,12 @@ footer > div:nth-child(3n){
 
 
 @media (max-width: 1000px) {
+
+    .btn{
+        font-size: 12px;
+    }
+
+
     header{
         display: none;
     }
@@ -1236,16 +1242,22 @@ footer > div:nth-child(3n){
 
     .title{
         text-align: center;
-        padding: 5% 10%;
+        min-width: unset;
+        width: 90%;
     }
 
     .block-info{
         margin-right: 0;
         margin-left: 0;
+        min-width: unset;
+        width: 90%;
     }
 
     .block-info-second-home{
+        width: 90%;
         margin: 5% 2%;
+        padding: unset;
+        min-width: unset;
     }
 
     .home-block-info:nth-child(odd),
@@ -1257,6 +1269,12 @@ footer > div:nth-child(3n){
     .block-info:nth-child(even){
         margin-right: 0;
         margin-left: 0;
+    }
+
+
+    .home-block-info{
+        width: 90%;
+        min-width: unset;
     }
 
     footer{
@@ -1319,23 +1337,30 @@ footer > div:nth-child(3n){
         width: 60%;
     }
 
-
-    .deco_01{
-        display: none;
+    .list-row{
+        flex-direction: column;
+        padding: 5% 0;
+        justify-content: space-around;
     }
 
-    .deco_0_1{
-        display: none;
-    }
-    .deco_1{
-        display: none;
+    .nav-list{
+        justify-content: space-around;
     }
 
-    .deco_5_2{
-        display: none;
-    }
-
-    .deco_5_3{
+    .deco_5_2,
+    .deco_5_1,
+    .deco_01,
+    .deco_0_1,
+    .deco_1,
+    .deco_5_2,
+    .deco_5_3,
+    .deco_0,
+    .deco_3_1,
+    .deco_2_4,
+    .deco_2_2,
+    .deco_2,
+    .deco_2_1,
+    .deco_3{
         display: none;
     }
 
@@ -1361,7 +1386,7 @@ footer > div:nth-child(3n){
     }
 
     .popup{
-        top: 5%;
+        top: 2%;
         left: 5%;
         width: 90%;
         margin-right: unset;
@@ -1369,17 +1394,26 @@ footer > div:nth-child(3n){
         min-width: unset;
         padding: 40px 20px;
         height: fit-content;
+        overflow-y: auto;
     }
 
     .description-img{
-        width: 280px;
-        height: 280px;
+        width: 150px;
+        height: 150px;
     }
 
     .description-nav{
-        padding-right: 20%;
+        padding-right: 2%;
     }
 
+    span{
+        font-size: 24px;
+    }
+
+    .title_2{
+        line-height: unset;
+        font-size: 24px;
+    }
 }
 
 
